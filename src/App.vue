@@ -10,7 +10,9 @@
     <SideNav/>
 
     <v-content>
-      <HelloWorld/>
+      <v-container fluid fill-height align-start>
+        <router-view/>
+      </v-container>
     </v-content>
   </v-app>
 </template>
