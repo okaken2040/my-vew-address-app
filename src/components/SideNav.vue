@@ -3,10 +3,10 @@
     <v-list>
       <v-list-item>
         <v-list-item-avatar>
-          <img src="https://avatars2.githubusercontent.com/u/1363954?s=460&v=4">
+          <img src="../assets/1f85f34c.jpg">
         </v-list-item-avatar>
         <v-list-item-content>
-          <v-list-item-title>Kazuya Kojima</v-list-item-title>
+          <v-list-item-title>Kensei Okamoto</v-list-item-title>
         </v-list-item-content>
       </v-list-item>
 
@@ -29,8 +29,8 @@ export default {
   data () {
     return {
       items: [
-        { title:'ホーム', icon: 'home', link: { name: 'home'}},
-        { title: '連絡先一覧', icon: 'list', link: { name: 'addresses'} }
+        { title:'ホーム', icon: 'mdi-home', link: { name: 'home'}},
+        { title: '連絡先一覧', icon: 'mdi-book', link: { name: 'addresses'}}
       ]
     }
   }
