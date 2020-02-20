@@ -3,10 +3,10 @@
     <v-list>
       <v-list-item>
         <v-list-item-avatar>
-          <img src="../assets/1f85f34c.jpg">
+          <img v-if="photoURL" :src="photoURL">
         </v-list-item-avatar>
         <v-list-item-content>
-          <v-list-item-title>Kensei Okamoto</v-list-item-title>
+          <v-list-item-title>{{userName}}</v-list-item-title>
         </v-list-item-content>
       </v-list-item>
 
@@ -25,6 +25,7 @@
 </template>
 
 <script>
+import {mapGetters} from 'vuex'
 export default {
   data () {
     return {
@@ -33,6 +34,9 @@ export default {
         { title: '連絡先一覧', icon: 'mdi-book', link: { name: 'addresses'}}
       ]
     }
+  },
+  computed: {
+    ...mapGetters(['userName','photoURL'])
   }
 }
 </script>
