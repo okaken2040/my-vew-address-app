@@ -65,7 +65,7 @@ export default new Vuex.Store({
     updateAddress({ getters, commit }, { id, address }) {
       if (getters.uid) {
         firebase.firestore().collection(`users/${getters.uid}/addresses`).doc(id).update(address).then(() => {
-            commit('addAddress', { id, address });
+            commit('updateAddress', { id, address });
         })
       }
     },
